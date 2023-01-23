@@ -40,6 +40,22 @@ $(document).ready(function () {
             }
         });
     }
+
+    // Set get items from local storage, input details
+    $("#hour-9 .description").val(localStorage.getItem("hour9"));
+    $("#hour-10 .description").val(localStorage.getItem("hour10"));
+    $("#hour-11 .description").val(localStorage.getItem("hour11"));
+    $("#hour-12 .description").val(localStorage.getItem("hour12"));
+    $("#hour-1 .description").val(localStorage.getItem("hour1"));
+    $("#hour-2 .description").val(localStorage.getItem("hour2"));
+    $("#hour-3 .description").val(localStorage.getItem("hour3"));
+    $("#hour-4 .description").val(localStorage.getItem("hour4"));
+    $("#hour-5 .description").val(localStorage.getItem("hour5"));
+
+    blockTime();
+
+});
+
     // TODO: Add a listener for click events on the save button. This code should
     // use the id in the containing time-block as a key to save the user input in
     // local storage. HINT: What does `this` reference in the click listener
@@ -58,5 +74,4 @@ $(document).ready(function () {
     // attribute of each time-block be used to do this?
     //
     // TODO: Add code to display the current date in the header of the page.
-  });
   
