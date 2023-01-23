@@ -1,7 +1,3 @@
-// Wrap all code that interacts with the DOM in a call to jQuery to ensure that
-// the code isn't run until the browser has finished rendering all the elements
-// in the html.
-
 // Var for current date
 var today = moment();
 $("#currentDay").text(today.format("dddd, MMMM Do, YYYY"));
@@ -11,7 +7,7 @@ $(document).ready(function () {
     $(".saveBtn").on("click", function () {
         var text = $(this).siblings(".description").val();
         var time = $(this).parent().attr("id");
-
+        // console.log(time)
         localStorage.setItem(time, text);
     });
           
@@ -42,15 +38,15 @@ $(document).ready(function () {
     }
 
     // Set get items from local storage, input details
-    $("#hour-9 .description").val(localStorage.getItem("hour9"));
-    $("#hour-10 .description").val(localStorage.getItem("hour10"));
-    $("#hour-11 .description").val(localStorage.getItem("hour11"));
-    $("#hour-12 .description").val(localStorage.getItem("hour12"));
-    $("#hour-1 .description").val(localStorage.getItem("hour1"));
-    $("#hour-2 .description").val(localStorage.getItem("hour2"));
-    $("#hour-3 .description").val(localStorage.getItem("hour3"));
-    $("#hour-4 .description").val(localStorage.getItem("hour4"));
-    $("#hour-5 .description").val(localStorage.getItem("hour5"));
+    $("#hour-9 .description").val(localStorage.getItem("hour-9"));
+    $("#hour-10 .description").val(localStorage.getItem("hour-10"));
+    $("#hour-11 .description").val(localStorage.getItem("hour-11"));
+    $("#hour-12 .description").val(localStorage.getItem("hour-12"));
+    $("#hour-1 .description").val(localStorage.getItem("hour-1"));
+    $("#hour-2 .description").val(localStorage.getItem("hour-2"));
+    $("#hour-3 .description").val(localStorage.getItem("hour-3"));
+    $("#hour-4 .description").val(localStorage.getItem("hour-4"));
+    $("#hour-5 .description").val(localStorage.getItem("hour-5"));
 
     blockTime();
 
