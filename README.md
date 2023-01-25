@@ -21,4 +21,4 @@ Day Planner:
 
 Thanks to the instructor for commenting some great hints in the starter code.
 
-I also want to thank Boostrap and JQuery for making coding a little more easier.
+I also want to thank Boostrap and JQuery for making coding a little easier.
